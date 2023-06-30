@@ -130,7 +130,7 @@ func (r *Resolver) send() {
 }
 
 func (r *Resolver) exchange() error {
-	msg := new(dns.Msg).SetQuestion(r.domain, dns.TypeNone)
+	msg := new(dns.Msg).SetQuestion(r.domain, dns.TypeANY)
 	conn, err := dns.Dial(r.protocol, r.server)
 	if err != nil {
 		return err
