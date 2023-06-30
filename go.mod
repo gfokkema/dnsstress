@@ -1,4 +1,4 @@
-module github.com/DataDog/dnsstress
+module github.com/gfokkema/dnsstress
 
 go 1.14
 
